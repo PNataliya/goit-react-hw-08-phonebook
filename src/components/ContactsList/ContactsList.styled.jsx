@@ -6,7 +6,7 @@ export const List = styled.li`
   justify-content: space-between;
   margin-bottom: 15px;
 
-  &:last-child {
+  :last-child {
     margin-bottom: 0;
   }
 `;

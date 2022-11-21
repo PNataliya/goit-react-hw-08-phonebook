@@ -10,9 +10,9 @@ import {
 } from './Contacts.styled';
 import { deleteContact } from '../../redux/contacts/operations';
 
-export const Contact = ({ id, name, number }) => {
+export const Contact = ({ contactID, name, number }) => {
   const dispatch = useDispatch();
-  console.log('contactID', id);
+  console.log('contactID', contactID);
   return (
     <>
       <ContactData>
@@ -23,7 +23,10 @@ export const Contact = ({ id, name, number }) => {
       </ContactData>
       <ContactData>
         <ContactNumber>{number}</ContactNumber>
-        <Button type="button" onClick={() => dispatch(deleteContact(id))}>
+        <Button
+          type="button"
+          onClick={() => dispatch(deleteContact(contactID))}
+        >
           <Icon>
             <FaTrash />
           </Icon>
