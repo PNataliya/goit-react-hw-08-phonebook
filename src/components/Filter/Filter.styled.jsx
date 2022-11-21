@@ -7,18 +7,24 @@ export const Label = styled.label`
   padding: 10px;
 `;
 
+export const Title = styled.h2`
+  margin-bottom: 23px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  align-items: center;
+`;
 export const Text = styled.p`
   font-weight: 500;
-  margin: 5px;
+  padding: 10px;
 `;
 
 export const Input = styled.input`
   height: 40px;
 
   padding: 5px 10px;
-
   font-size: 14px;
-  color: #000;
+  color: inherit;
 
   outline: none;
   border: 1px solid rgb(0, 0, 0);

@@ -5,7 +5,13 @@ import { ContactEditor } from '../components/ContactEditor/ContactEditor';
 import { Filter } from '../components/Filter/Filter';
 import { fetchContacts } from '../redux/contacts/operations';
 import { selectIsLoading } from '../redux/contacts/selectors';
-import { Container, Wrapper, WrapperFilter } from './Contacts.styled';
+import {
+  BoxContacts,
+  MainContainer,
+  Container,
+  Wrapper,
+  WrapperFilter,
+} from './Contacts.styled';
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -17,16 +23,20 @@ export default function Contacts() {
 
   return (
     <>
-      <Container>
-        <Wrapper>
-          <ContactEditor />
-          <div>{isLoading && 'Request in progress...'}</div>
-          <ContactList />
-        </Wrapper>
-        <WrapperFilter>
-          <Filter />
-        </WrapperFilter>
-      </Container>
+      <MainContainer>
+        <Container>
+          <BoxContacts>
+            <Wrapper>
+              <ContactEditor />
+              <div>{isLoading && 'Request in progress...'}</div>
+              <ContactList />
+            </Wrapper>
+            <WrapperFilter>
+              <Filter />
+            </WrapperFilter>
+          </BoxContacts>
+        </Container>
+      </MainContainer>
     </>
   );
 }

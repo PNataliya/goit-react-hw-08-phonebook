@@ -1,10 +1,10 @@
 import { Circle } from '@chakra-ui/layout';
 import { SkeletonCircle, Heading } from '@chakra-ui/react';
-import { Container, Box } from './Home.styled';
+import { MainContainer, Container, Box } from './Home.styled';
 
 export default function Home() {
   return (
-    <main>
+    <MainContainer>
       <Container>
         <Box>
           <Circle
@@ -33,14 +33,8 @@ export default function Home() {
           >
             Phonebook, welcome page{' '}
           </Heading>
-          {/* <Title>
-          Task manager welcome page{' '}
-          <span role="img" aria-label="Greeting icon">
-            💁‍♀️
-          </span>
-        </Title> */}
         </Box>
       </Container>
-    </main>
+    </MainContainer>
   );
 }

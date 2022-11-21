@@ -1,13 +1,25 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  position: relative;
-  margin: 0 auto;
-  padding: 35px;
-  max-width: 1280px;
-  display: flex;
+export const MainContainer = styled.main`
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex: auto;
+`;
+
+export const Container = styled.section`
+  position: relative;
+  margin: 0 auto;
+  padding: 0 35px;
+  max-width: 1280px;
+`;
+
+export const BoxContacts = styled.div`
+  display: flex;
+  align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `;
 
 export const Wrapper = styled.div`
