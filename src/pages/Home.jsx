@@ -14,14 +14,14 @@ export default function Home() {
             w="400px"
             h="400px"
             alignSelf="flex-end"
-            top="7px"
-            right="257px"
+            top="103px"
+            right="74px"
           />
           <SkeletonCircle
             position="absolute"
             size="300"
-            top="5px"
-            right="160px"
+            top="60px"
+            right="-52px"
             startColor="pink.500"
             endColor="blue.500"
           />
@@ -30,9 +30,11 @@ export default function Home() {
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400,  purple.600)"
             bgClip="text"
+            pb="100px"
           >
             Phonebook, welcome page{' '}
           </Heading>
+          <div></div>
         </Box>
       </Container>
     </MainContainer>
